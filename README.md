@@ -2,7 +2,7 @@
 ## Description
 whiteboard repository is an application that you can draw to a whiteboard. You can change the size of the brush and it's colour, by key shortcuts or the user interface. The user is also able to save the whiteboard as a .png image. This application is particularly useful for mathematics and or drawing rudimentary diagrams.
 
-##Shortcuts
+## Shortcuts
 - backspace - Erase the whiteboard.
 - '0' - Increase the brush size.
 - '9' - Decrease the brush size.
