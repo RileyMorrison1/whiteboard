@@ -39,6 +39,8 @@ def adjust_size(up_down):
         if brush_size > 5:
             brush_size -= 5
 
+    pygame.time.wait(200)
+
 # button function creates a button, based on the parameters used.
 def button(x_position, y_position, radius, bg_colour="black", hl_colour="white", sl_colour="blue", function=print, function_variable="No Variable"):
     
@@ -49,6 +51,7 @@ def button(x_position, y_position, radius, bg_colour="black", hl_colour="white",
             if pygame.mouse.get_pressed()[0]:
                 button_colour = sl_colour
                 function(function_variable)
+
     else:
         button_colour = bg_colour
     pygame.draw.circle(screen, button_colour, (x_position, y_position), radius)
@@ -56,12 +59,12 @@ def button(x_position, y_position, radius, bg_colour="black", hl_colour="white",
 # user_interface function creates and refreshes the user interface.
 def user_interface(width):
     pygame.draw.rect(screen, "teal", pygame.Rect(0, 0, width, y))
-    button(25, 50, 17.5, "black", "white", "blue", adjust_size, False)
-    button(75, 50, 17.5 , "black", "white", "blue", adjust_size, True)
-    button(50, 190, 30, "red", "blue", "pink", change_colour, "red")
-    button(50, 260, 30, "blue", "blue", "pink", change_colour, "blue")
-    button(50, 330, 30, "green", "blue", "pink", change_colour, "green")
-    button(50, 400, 30, "black", "blue", "pink", change_colour, "black")
+    button(25, 50, 17.5, "black", "gray8", "gray10", adjust_size, False)
+    button(75, 50, 17.5 , "black", "gray8", "gray10", adjust_size, True)
+    button(50, 190, 30, "red", "red3", "red4", change_colour, "red")
+    button(50, 260, 30, "blue", "blue3", "blue4", change_colour, "blue")
+    button(50, 330, 30, "green", "green3", "green4", change_colour, "green")
+    button(50, 400, 30, "black", "gray8", "gray10", change_colour, "black")
 
 
 while running:
