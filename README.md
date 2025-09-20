@@ -18,4 +18,3 @@ whiteboard repository is an application that you can draw to a whiteboard. You c
 ## To-Do List
 - Complete user interface
 - Solve the board clearing when the window is resized
-- Fix the increase size button, so it doesn't increase the size as fast
