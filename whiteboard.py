@@ -41,6 +41,10 @@ def adjust_size(up_down):
 
     pygame.time.wait(200)
 
+# clear function erases everything on the screen.
+def clear(clear_colour):
+	screen.fill(clear_colour)
+
 # button function creates a button, based on the parameters used.
 def button(x_position, y_position, radius, bg_colour="black", hl_colour="white", sl_colour="blue", function=print, function_variable="No Variable"):
     
@@ -64,8 +68,10 @@ def user_interface(width):
     button(50, 190, 30, "red", "red3", "red4", change_colour, "red")
     button(50, 260, 30, "blue", "blue3", "blue4", change_colour, "blue")
     button(50, 330, 30, "green", "green3", "green4", change_colour, "green")
-    button(50, 400, 30, "black", "gray8", "gray10", change_colour, "black")
-
+    button(50, 400, 30, "yellow", "yellow3", "yellow4", change_colour, "yellow")
+    button(50, 470, 30, "purple", "purple3", "purple4", change_colour, "purple")
+    button(50, 540, 30, "black", "gray8", "gray10", change_colour, "black")
+    button(25, 610, 17.5, "red", "red3", "red4", clear, "white")
 
 while running:
     screen_info = pygame.display.Info()
